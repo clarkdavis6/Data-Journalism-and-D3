@@ -68,3 +68,27 @@
     font-size: 13px;
   }
 }
+
+/* slack https://stackoverflow.com/questions/21753126/d3-js-starting-and-ending-tick
+g.axis line, g.axis path {
+  fill:none;
+  stroke:royalblue;
+  shape-rendering:crispEdges;
+}
+g.axis text{
+  fill:royalblue;
+  font-family:sans-serif;
+}
+g.axis path {
+  stroke-width:2;
+  stroke:seagreen;
+}
+svg {
+display: block;
+width: 100vw;
+height: 100vh;
+}
+body {
+margin: 0;
+}
+*/
