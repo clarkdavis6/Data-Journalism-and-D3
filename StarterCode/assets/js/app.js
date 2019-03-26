@@ -31,6 +31,8 @@ console.log(newsData);
 newsData.map(function (data) {
     data.poverty = +data.poverty;
     data.obesity = +data.obesity;
+    //data.smokers = +data.smokers;
+    //data.lacks
 });
 
 // Step 2: Create scale functions
@@ -69,18 +71,7 @@ var circlesGroup = chartGroup.selectAll("circle")
     .attr("r", "15")
     .attr("fill", "pink")
     .attr("opacity", ".5")
-
-
-    //var circlesGroup = chartGroup.selectAll()
-    //.data(newsData)
-    //.enter()
-    //.append("text")
-    //.attr("x", d => xLinearScale(d.poverty))
-    //.attr("y", d => yLinearScale(d.obesity))
-    //.attr("r", "15")
-    //.style("fill", "blue")
-    //.style("text-anchor", "middle")
-    //.text(d => (d,abbr));
+    .text(d => (d.abbr));//(still not appending the addr fo the state to the plot)
 
 // Step 6: Initialize tool tip
 // ==============================
